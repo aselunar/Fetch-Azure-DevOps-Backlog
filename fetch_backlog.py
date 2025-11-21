@@ -2,8 +2,10 @@ import os
 import sys
 import requests
 import base64
+from dotenv import load_dotenv
 
 # --- Configuration Loaded from Environment ---
+load_dotenv()
 ORG_URL = os.getenv("ADO_ORG_URL")
 PROJECT = os.getenv("ADO_PROJECT")
 PAT = os.getenv("ADO_PAT")
